@@ -1,7 +1,7 @@
 import joblib
 import spacy
 
-MODELS_DIR = "./models/"
+MODELS_DIR = "./models"
 DIMENSIONS = ["ie", "ns", "tf", "jp"]
 
 models = {
@@ -26,6 +26,5 @@ def predict_mbti(text):
     label = ""
     cleaned_text = [preprocess(text)]
     for dimension in DIMENSIONS:
-        label += models[dimension].predict(cleaned_text)[0]
-
+        label += encoders[dimension][models[dimension].predict(cleaned_text)[0]]
     return label
