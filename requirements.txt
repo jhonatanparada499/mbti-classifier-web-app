@@ -31,7 +31,7 @@ pydantic_core==2.41.5
 Pygments==2.20.0
 requests==2.33.1
 rich==14.3.3
-scikit-learn==1.8.0
+scikit-learn==1.6.1
 scipy==1.17.1
 setuptools==82.0.1
 shellingham==1.5.4
