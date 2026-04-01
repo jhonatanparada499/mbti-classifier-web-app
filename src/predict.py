@@ -22,7 +22,7 @@ def preprocess(text):
     return " ".join(tokens)
 
 
-def predict(text):
+def predict_mbti(text):
     label = ""
     cleaned_text = [preprocess(text)]
     for dimension in DIMENSIONS:
