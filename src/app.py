@@ -16,8 +16,7 @@ def main_page():
 def prediction():
     text = request.args.get("text")
     predictions = {
-        "class1": text,
-        "class2": text,
+        "label": predict_mbti(text),
     }
 
     return render_template("predict.html", predictions=predictions)
