@@ -6,3 +6,8 @@ Activate the environment
 ```
 . .venv/bin/activate
 ```
+
+## Inspiration
+[Dockerizing Flask with Postgres, Gunicorn, and Nginx](https://testdriven.io/blog/dockerizing-flask-with-postgres-gunicorn-and-nginx/)  
+[Deploying a Flask To-Do App with Docker, Nginx, and MySQL](https://netopsautomation.medium.com/deploying-a-flask-to-do-app-with-docker-nginx-and-mysql-4b85a7e929a3)  
+[Nginx: Setting Up a Simple Proxy Server Using Docker and Python/Django…](https://teke42.wordpress.com/2018/01/19/nginx-setting-up-a-simple-proxy-server-using-docker-and-python-django/)  
