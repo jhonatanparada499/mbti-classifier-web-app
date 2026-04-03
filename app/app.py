@@ -1,7 +1,13 @@
 from flask import Flask, request, redirect, url_for, render_template
+from werkzeug.middleware.proxy_fix import ProxyFix
+
 from predict import predict_mbti
 
 app = Flask(__name__)
+
+# production, source:
+# https://flask.palletsprojects.com/en/stable/deploying/proxy_fix/
+app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1, x_host=1, x_prefix=1)
 
 
 @app.route("/", methods=["GET", "POST"])
