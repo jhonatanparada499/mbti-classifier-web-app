@@ -1,4 +1,5 @@
-# mbti-classifier-web-app
+# MBTI Predictor Web App
+![architecture](./images/system_architecture.drawio.png)
 
 Activate the environment  
 ```
