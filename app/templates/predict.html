@@ -9,17 +9,8 @@
     <div id="maintext" 
       style="position:absolute; margin:auto; width:700px; height:300px; text-align:center; top:0; bottom: 0; left: 0; right: 0;">
       <h1 class="text-light mb-5"> Your Prediction </h1>
-      <p class="text-light"> My algorithm predicted you are: </p>
-      <table class="table-bordered text-light" style="width:100%">
-        <tr>
-          <th>Class</th>
-          <th>Probability</th>
-        </tr>
-        <tr>
-          <td>{{ predictions.label }}</td>
-          <td>Probability here</td>
-        </tr>
-      </table>
+      <p class="text-light"> My ML model predicted you are: </p>
+      <h3 class="text-light display-1 font-weight-bold mb-4">{{ predictions.label }}</h3>
       <a href="{{ url_for('main_page') }}">
         <button class="button mt-3">Try again?</button>
       </a>
